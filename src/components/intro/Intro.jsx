@@ -13,8 +13,9 @@ export default function intro() {
                     <h1>Hi, I'm <span>Jason</span></h1>
                     <h3>A software developer from Vancouver, BC</h3>
                 </div>
-                <a href="#portfolio">
-                    <img src="assets/" alt=""/>
+                <a href="#portfolio" className="">
+                    Portfolio
+                    {/* <img src="assets/" alt=""/> */}
                 </a>
 
             </div>
