@@ -37,8 +37,10 @@
     }
 
     .item{
-        width: 220px;
-        height: 150px;
+        // width: 220px;
+        // height: 150px;
+        width: 600px;
+        height: 300px;
         border-radius: 20px;
         border: 1px solid lightgrey;
         margin: 10px 20px;
@@ -51,13 +53,32 @@
         cursor: pointer;
 
         @include mobile{
-            width: 130px;
-            height: 100px;
+            // width: 130px;
+            // height: 100px;
+            width: 320px;
+            height: 150px;
         }
 
-        h3{
+        // h3{
+        //     position:absolute;
+        //     font-size:50px;
+        //     @include mobile{
+        //         font-size: 20px;
+        //     }
+        // }
+
+        .porfoliolink{
             position:absolute;
-            font-size:20px;
+            font-size:50px;
+            text-decoration: none;
+            font-weight:700;
+            color:white;
+            padding:15%;
+        
+
+            @include mobile{
+                font-size: 20px;   
+            }
         }
 
         img{
@@ -74,6 +95,8 @@
                 z-index: 0;
             }
         }
+
+        
 
     }
 

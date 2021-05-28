@@ -12,7 +12,7 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <p>contact us</p>
+                
             </div>
             <div className="right">
                 <h2>Contact</h2>
@@ -23,6 +23,7 @@ export default function Contact() {
                     {message && <span> Email has been sent!</span>}
                 </form>
             </div>
+
             
         </div>
     )
