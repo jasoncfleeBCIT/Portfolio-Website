@@ -4,6 +4,16 @@ export const featuredPortfolio = [
         title: "Landscape Web App",
         img: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
     },
+    {
+        id: 2,
+        title: "Landscape Web App",
+        img: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+    },
+    {
+        id: 3,
+        title: "Landscape Web App",
+        img: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+    },
 ];
 
 export const webPortfolio = [
