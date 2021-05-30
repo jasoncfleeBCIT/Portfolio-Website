@@ -11,7 +11,7 @@ export const webPortfolio = [
         id: 1,
         title: "Discount Indeed",
         img: "./assets/DiscountIndeed.png",
-        link: "https://jasoncflee.com/COMP4537/labs/group6termproject/landing.html",
+        link: "https://jasoncflee.com/projects/discount_indeed/landing.html",
     },
 ];
 
