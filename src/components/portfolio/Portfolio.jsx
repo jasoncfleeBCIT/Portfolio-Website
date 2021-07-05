@@ -3,14 +3,14 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss"
 import {
     featuredPortfolio,
-    webPortfolio,
-    mobilePortfolio,
-    designPortfolio,
-    contentPortfolio,
+    personalPortfolio,
+    practicumPortfolio,
+    // designPortfolio,
+    // contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
-        const [selected, setSelected] = useState("web");
+        const [selected, setSelected] = useState("personal");
         const [data, setData] = useState([]);
         const list = [
             // {
@@ -18,13 +18,13 @@ export default function Portfolio() {
             //     title: "Featured",
             // },
             {
-                id:"web",
-                title: "Web Application",
+                id:"personal",
+                title: "Personal Project",
             },
-            // {
-            //     id: "mobile",
-            //     title: "Mobile App",
-            // },
+            {
+                id: "practicum",
+                title: "Practicum Project",
+            },
             // {
             //     id: "design",
             //     title: "Design",
@@ -37,23 +37,23 @@ export default function Portfolio() {
 
         useEffect(()=>{
             switch(selected){
-                case "featured":
-                    setData(featuredPortfolio);
+                // case "featured":
+                //     setData(featuredPortfolio);
+                //     break;
+                case "personal":
+                    setData(personalPortfolio);
                     break;
-                case "web":
-                    setData(webPortfolio);
+                case "practicum":
+                    setData(practicumPortfolio);
                     break;
-                case "mobile":
-                    setData(mobilePortfolio);
-                    break;
-                case "design":
-                    setData(designPortfolio);
-                    break;
-                case "content":
-                    setData(contentPortfolio);
-                    break;
+                // case "design":
+                //     setData(designPortfolio);
+                //     break;
+                // case "content":
+                //     setData(contentPortfolio);
+                //     break;
                 default:
-                    setData(featuredPortfolio);
+                    setData(personalPortfolio);
             }
         },[selected])
     return (
@@ -68,7 +68,6 @@ export default function Portfolio() {
                 {data.map((d) => (
                     <div className="item">
                         <img src={d.img} alt=""/>
-                        {/* <h3>{d.title}</h3> */}
                         <a href={d.link} className="porfoliolink">
                             {d.title}
                         </a>
